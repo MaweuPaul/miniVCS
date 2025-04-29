@@ -6,7 +6,7 @@
 
 ## 📄 Description
 
-**MiniVCS** is a lightweight version control system inspired by Git, built from scratch.  
+**MiniVersionControlSystem** is a lightweight version control system inspired by Git, built from scratch.  
 It helps developers understand how version control works internally by recreating the essential building blocks: staging changes, committing snapshots, and maintaining project history.
 
 Unlike a full Git system, **MiniVCS** focuses purely on:
