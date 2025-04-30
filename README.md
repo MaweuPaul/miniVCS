@@ -33,24 +33,24 @@ This project deepens your understanding of repositories, commits, trees, blobs, 
   - `json` (storing staging information)
 
 ## 📂 Project Structure
-
 .minivcs/ # Repository data
-├── objects/ # Content-addressable storage
-├── refs/heads/ # Branch references
-├── HEAD # Current branch pointer
-└── index # Staging area (JSON)
+|-- objects/ # Content-addressable storage
+|-- refs/
+| |-- heads/ # Branch references
+|-- HEAD # Current branch pointer
+|-- index # Staging area (JSON)
 
 ### Code organization
 
 minivcs/
-├── core/ # Core functionality
-│ ├── init.py # Repository setup
-│ ├── add.py # File hashing and storage
-│ ├── stage.py # Staging management
-│ ├── commit.py # Commit creation
-│ └── log.py # History viewing
-├── utils/ # Helper functions
-└── main.py # Command interface
+|-- core/ # Core functionality
+| |-- init.py # Repository setup
+| |-- add.py # File hashing and storage
+| |-- stage.py # Staging management
+| |-- commit.py # Commit creation
+| |-- log.py # History viewing
+|-- utils/ # Helper functions
+|-- main.py # Command interface
 
 ## 🚀 Usage
 
