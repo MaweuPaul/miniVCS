@@ -3,11 +3,11 @@
 import sys
 import os
 
-
+# Add the current directory to the Python path
 script_dir = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.dirname(script_dir))
+sys.path.insert(0, script_dir)
 
-from minivcs.main import main
+from miniVCS1.main import main
 
 if __name__ == "__main__":
     main()
