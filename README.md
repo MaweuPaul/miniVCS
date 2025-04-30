@@ -33,6 +33,7 @@ This project deepens your understanding of repositories, commits, trees, blobs, 
   - `json` (storing staging information)
 
 ## 📂 Project Structure
+
 .minivcs/ # Repository data
 |-- objects/ # Content-addressable storage
 |-- refs/
@@ -52,23 +53,39 @@ minivcs/
 |-- utils/ # Helper functions
 |-- main.py # Command interface
 
+## 📥 Installation
+
+### Install from GitHub
+
+```bash
+# Clone the repository
+git clone https://github.com/MaweuPaul/miniVCS.git
+cd miniVCS
+
+# Install the package
+pip install -e .
+
+```
+
 ## 🚀 Usage
+
+After installation, you can use the `minivcs` command from anywhere:
 
 ```bash
 # Initialize a repository
-python main.py init
+minivcs init
 
 # Add a file
-python main.py add filename.txt
+minivcs add filename.txt
 
 # Check staging status
-python main.py status
+minivcs status
 
 # Commit staged changes
-python main.py commit "Initial commit"
+minivcs commit "Initial commit"
 
 # View commit history
-python main.py log
+minivcs log
 ```
 
 ## 🔍 How It Works
