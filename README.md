@@ -34,8 +34,6 @@ This project deepens your understanding of repositories, commits, trees, blobs, 
 
 ## 📂 Project Structure
 
-### Repository Structure
-
 .minivcs/ # Repository data
 ├── objects/ # Content-addressable storage
 ├── refs/heads/ # Branch references
