@@ -1,7 +1,7 @@
 # cli entry point ... handles commands
 import sys
 import os
-from core import init, add, stage
+from core import init, add, stage ,commit,log
 
 def print_usage():
     """Print usage information for the MiniVCS commands."""
@@ -51,13 +51,27 @@ def main():
             print("Error: Commit message required")
             print("Usage: python main.py commit <message>")
             return
+        
         message = sys.argv[2]
-        print(f"Commit functionality not implemented yet.")
-        print(f"Would commit with message: {message}")
         
+        # Check if there's an author argument
+        author = "MiniVCS User <user@example.com>"
+        if len(sys.argv) > 3 and sys.argv[3].startswith("--author="):
+            author = sys.argv[3][9:]  # Remove "--author=" prefix
+        
+    
+        commit_hash = commit.create_commit(message, author)
+        
+        if commit_hash:
+            print(f"[{commit.get_current_branch()}] {commit_hash[:7]} {message}")
+
     elif command == "log":
-        print("Commit history functionality not implemented yet.")
         
+        count = None
+        if len(sys.argv) > 2 and sys.argv[2].isdigit():
+            count = int(sys.argv[2])
+            
+        log.show_log(count)
     elif command == "help":
         print_usage()
         
