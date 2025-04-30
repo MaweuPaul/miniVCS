@@ -60,7 +60,7 @@ minivcs/
 ```bash
 # Clone the repository
 git clone https://github.com/MaweuPaul/miniVCS.git
-cd miniVCS
+cd minivcs
 
 # Install the package
 pip install -e .
