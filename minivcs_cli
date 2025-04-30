@@ -7,7 +7,7 @@ import os
 script_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, script_dir)
 
-from miniVCS1.main import main
+from minivcs.main import main
 
 if __name__ == "__main__":
     main()

@@ -2,7 +2,7 @@ import os
 import time
 import json
 import hashlib
-from core import stage
+from minivcs.core import stage
 
 def create_tree_object():
     """

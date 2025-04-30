@@ -4,7 +4,7 @@ setup(
     name="minivcs",
     version="0.1",
     packages=find_packages(),
-    scripts=["minivcs"],
+    scripts=["minivcs_cli"],
         entry_points={
         'console_scripts': [
             'minivcs=minivcs.main:main',

@@ -1,6 +1,6 @@
 import os
 import hashlib
-from core import stage
+from minivcs.core import stage
 
 def hash_file_contents(file_path):
     """Generate a SHA-1 hash of the file content and stage the file."""

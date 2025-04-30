@@ -2,7 +2,7 @@
 
 import sys
 import os
-from core import init, add, stage, commit, log
+from minivcs.core import init, add, stage, commit, log
 
 def print_usage():
     """Print usage information for the MiniVCS commands."""
