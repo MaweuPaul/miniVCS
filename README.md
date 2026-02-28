@@ -2,7 +2,7 @@
 
 > Because building your own Git teaches you more than using it.
 
-## 📄 Description
+##  Description
 
 **MiniVersionControlSystem** is a lightweight version control system inspired by Git, built from scratch.  
 It helps developers understand how version control works internally by recreating the essential building blocks: staging changes, committing snapshots, and maintaining project history.
@@ -16,14 +16,14 @@ Unlike a full Git system, **MiniVCS** focuses purely on:
 
 This project deepens your understanding of repositories, commits, trees, blobs, and refs — the real foundations behind modern version control.
 
-## ✨ Key Features
+## Key Features
 
 - **Repository Initialization**: Create a `.minivcs/` hidden folder to store objects and metadata.
 - **File Staging**: Hash and store file contents ready for committing.
 - **Committing Changes**: Create commits with messages and timestamps linking to staged files.
 - **View Commit History**: Traverse through the commit log history.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Language**: Python 3.x
 - **Libraries Used**:
@@ -32,7 +32,7 @@ This project deepens your understanding of repositories, commits, trees, blobs, 
   - `time` (timestamps)
   - `json` (storing staging information)
 
-## 📂 Project Structure
+## Project Structure
 
 .minivcs/ # Repository data
 |-- objects/ # Content-addressable storage
@@ -53,7 +53,7 @@ minivcs/
 |-- utils/ # Helper functions
 |-- main.py # Command interface
 
-## 📥 Installation
+##  Installation
 
 ### Install from GitHub
 
@@ -67,7 +67,7 @@ pip install -e .
 
 ```
 
-## 🚀 Usage
+##  Usage
 
 After installation, you can use the `minivcs` command from anywhere:
 
@@ -88,7 +88,7 @@ minivcs commit "Initial commit"
 minivcs log
 ```
 
-## 🔍 How It Works
+##  How It Works
 
 ### Content Storage
 
